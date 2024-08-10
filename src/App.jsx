@@ -1,27 +1,37 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/Home";
+import RootLayout from "./pages/RootLayout";
+import NewCustomer from "./pages/NewCustomer";
+import NewWorkOrder from "./pages/NewWorkOrder";
+import NewInvoice from "./pages/NewInvoice";
+
 function App() {
-  return (
-    <>
-      <header>
-        <h1>All Sounds Hearing CRM System</h1>
-      </header>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Create customer account</a>
-          </li>
-          <li>
-            <a href="">Create Order</a>
-          </li>
-          <li>
-            <a href="">Create Invoice</a>
-          </li>
-        </ul>
-      </nav>
-      <main>
-        <h3>Main content</h3>
-      </main>
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <HomePage />,
+        },
+        {
+          path: "/new-customer",
+          element: <NewCustomer />,
+        },
+        {
+          path: "/new-work-order",
+          element: <NewWorkOrder />,
+        },
+        {
+          path: "/new-invoice",
+          element: <NewInvoice />,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;

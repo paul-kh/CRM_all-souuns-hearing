@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0 0;
 }
 
 html {
@@ -21,4 +22,66 @@ html {
 
 ul {
   list-style-type: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: #757f82;
+  padding: 1.5rem;
+  color: #0dfae7;
+  justify-content: space-between;
+}
+
+img {
+  height: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: wrap;
+}
+
+.navigation {
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+  min-height: 90vh;
+  min-width: 20rem;
+  background-color: #9b9a99;
+}
+
+.navigation ul {
+  color: rgb(21, 21, 129);
+}
+.navigation li a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navigation a:hover,
+a.active {
+  color: rgb(168, 57, 5);
+  font-weight: 900;
+}
+.navigation li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(248, 248, 244);
+}
+
+.page__title {
+  background-color: black;
+  color: white;
+}
+
+.page__title,
+.page__details {
+  padding: 1rem;
 }
