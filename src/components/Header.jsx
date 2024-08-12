@@ -5,8 +5,9 @@ export default function Header() {
     <header>
       <div className="logo">
         <img src={image} alt="All Sounds Hearing Logo" />
+        <h3>All Sounds Hearing </h3>
       </div>
-      <h1>All Sounds Hearing CRM System</h1>
+      <h1>CRM System</h1>
     </header>
   );
 }
