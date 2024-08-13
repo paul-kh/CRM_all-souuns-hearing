@@ -85,72 +85,75 @@ a.active {
   padding: 1rem;
 }
 
-/* *
-** STYLES FOR FORM AND ITS INPUT CONTROLS 
- */
-
+/* ///////////////////// FROM AND ITS CONTROLS //////////////////////////*/
 form {
-  width: 95%;
-  max-width: 75rem;
-  margin: 1.5rem auto;
+  width: 100%;
+  max-width: 55rem;
+  margin: 1.5rem auto; /* horizontal centering*/
   padding: 2rem 3rem;
   background: #757f82;
   border-radius: 8px;
   box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
 }
 
-.control,
-fieldset {
-  margin-bottom: 1rem;
+/* To contain 1 control in a row*/
+.control-group__col {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
 }
 
-.control.no-margin {
-  margin-bottom: 0;
+/* To contain multiple controls in a row */
+.control-group__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2px;
 }
 
-.control label {
-  /* display: block; */
-  font-size: 1rem;
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* shorthand for flex-grow: 1; this allows item to grow as space allows */
+  /*   background-color: pink; */
+  margin: 0.3rem 0;
+}
+
+.fit-content {
+  max-width: fit-content;
+}
+
+label {
+  max-width: fit-content;
+  font-size: 0.8rem;
   margin-bottom: 0.2rem;
-  color: #082424;
+  color: #64e9e9;
   text-transform: uppercase;
-  /* Paul */
   margin-right: 1rem;
   font-weight: 600;
 }
 
-.control input {
+input {
   width: 100%;
   padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #758a8a;
   background-color: #cbd6d6;
   color: #142020;
 }
 
-.control select {
-  /* display: block; */
-  width: 100%;
-  max-width: 15rem;
+select {
+  max-width: 100%;
   padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 4px;
   border: 1px solid #758a8a;
   background-color: #cbd6d6;
   color: #142020;
 }
 
-.control:has(input[type="checkbox"]) {
-  display: flex;
-  align-items: center;
-}
-
-.control:has(input[type="checkbox"]) label {
-  margin: 0;
-}
-
-.control input[type="checkbox"] {
+input[type="checkbox"] {
   display: inline-block;
   width: auto;
   max-width: none;
@@ -161,64 +164,8 @@ fieldset {
   color: #d9e2f1;
 }
 
-.control-error {
-  color: #ffca99;
-  font-size: 0.8rem;
-  height: 2rem;
-  padding: 0.5rem 0;
-}
-
-.control-error p {
-  margin: 0;
-}
-
-.control-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 3rem;
-}
-
-@media (max-width: 1050px) {
-  .control-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0rem;
-  }
-
-  .container {
-    flex-wrap: wrap;
-  }
-
-  .navigation,
-  .navigation li,
-  .navigation li a {
-    min-height: fit-content;
-    min-width: 100%;
-    text-align: center;
-    padding: 0.2rem;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-
-  form {
-    width: 100%;
-
-    margin: 0 auto;
-    padding: 1.5rem;
-    background: #757f82;
-    border-radius: 5px;
-    box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
-  }
-
-  .control input,
-  select {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 2px;
-    border: 0.7px solid #758a8a;
-    width: 100%;
-  }
+fieldset {
+  margin: 0 -0.3px;
 }
 
 .form-actions {
@@ -253,4 +200,54 @@ fieldset {
 .button-flat:focus {
   background-color: transparent;
   color: #0dfae7;
+}
+
+/* Move Navitation to Top at 800px screen */
+@media (max-width: 800px) {
+  .container {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .navigation,
+  .navigation li,
+  .navigation li a {
+    min-height: fit-content;
+    min-width: 100%;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .page__title {
+    font-size: 0.8rem;
+  }
+
+  .page__details {
+    padding: 0;
+  }
+
+  form {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  form {
+    width: 100%;
+    padding: 5px;
+    margin: 0 auto;
+  }
+  .control-group__row {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  input[type="number"] {
+    max-width: 100%;
+  }
+  .fit-content {
+    max-width: none;
+  }
 }

@@ -9,38 +9,37 @@ export default function NewCustomer() {
 
       <div className="page__details">
         <form onSubmit={() => {}}>
-          <div className="control">
-            <label htmlFor="customer-name">Customer Name</label>
-            <input
-              id="customer-name"
-              type="text"
-              name="customer-name"
-              required
-            />
-          </div>
-
-          <div className="control">
-            <label htmlFor="address">Street Address</label>
-            <input id="address" type="text" name="address" required />
-          </div>
-
-          <div className="control-row">
-            <div className="control">
-              <label htmlFor="confirm-password">Suite#</label>
+          <div className="control-group__col">
+            <div className="input-group">
+              <label htmlFor="customer-name">Customer Name</label>
               <input
-                id="suite-number"
+                id="customer-name"
                 type="text"
-                name="suite-number"
-                size="8"
+                name="customer-name"
+                required
               />
             </div>
+          </div>
 
-            <div className="control">
-              <label htmlFor="first-name">City</label>
-              <input type="text" id="City" name="City" size="30" required />
+          <div className="control-group__col">
+            <div className="input-group">
+              <label htmlFor="address">Street Address</label>
+              <input id="address" type="text" name="address" required />
+            </div>
+          </div>
+
+          <div className="control-group__row">
+            <div className="input-group">
+              <label htmlFor="confirm-password">Suite#</label>
+              <input id="suite-number" type="text" name="suite-number" />
             </div>
 
-            <div className="control">
+            <div className="input-group">
+              <label htmlFor="first-name">City</label>
+              <input type="text" id="City" name="City" required />
+            </div>
+
+            <div className="input-group">
               <label htmlFor="state">State</label>
               <select id="state" name="state" required defaultValue="">
                 <option value="" disabled>
@@ -56,39 +55,28 @@ export default function NewCustomer() {
               </select>
             </div>
 
-            <div className="control">
+            <div className="input-group">
               <label htmlFor="zip-code">Zip Code</label>
-              <input
-                type="number"
-                id="zip-code"
-                name="zip-code"
-                size="10"
-                required
-              />
+              <input type="number" id="zip-code" name="zip-code" required />
             </div>
           </div>
-          <div className="control-row">
-            <div className="control">
+          <div className="control-group__row">
+            <div className="input-group">
               <label htmlFor="phone">Phone Number</label>
-              <input id="phone" type="number" name="phone" size="15" />
+              <input id="phone" type="number" name="phone" />
             </div>
-            <div className="control">
+            <div className="input-group">
               <label htmlFor="confirm-password">E-mail</label>
-              <input id="email" type="email" name="email" size="100" />
+              <input id="email" type="email" name="email" />
             </div>
           </div>
 
-          <div className="control-row">
-            <div className="control">
+          <div className="control-group__row">
+            <div className="input-group">
               <label htmlFor="contact-person">Contact Person</label>
-              <input
-                id="contact-person"
-                type="text"
-                name="contact-person"
-                size="60"
-              />
+              <input id="contact-person" type="text" name="contact-person" />
             </div>
-            <div className="control">
+            <div className="input-group">
               <label htmlFor="old-account">Old Account Number</label>
               <input id="old-account" type="number" name="old-account" />
             </div>
