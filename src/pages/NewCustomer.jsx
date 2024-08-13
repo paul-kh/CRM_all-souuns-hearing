@@ -26,7 +26,7 @@ export default function NewCustomer() {
 
           <div className="control-row">
             <div className="control">
-              <label htmlFor="confirm-password">Building or Suite</label>
+              <label htmlFor="confirm-password">Suite#</label>
               <input
                 id="suite-number"
                 type="text"
@@ -69,7 +69,7 @@ export default function NewCustomer() {
           </div>
           <div className="control-row">
             <div className="control">
-              <label htmlFor="phone">Telephone Number</label>
+              <label htmlFor="phone">Phone Number</label>
               <input id="phone" type="number" name="phone" size="15" />
             </div>
             <div className="control">
@@ -85,7 +85,7 @@ export default function NewCustomer() {
                 id="contact-person"
                 type="text"
                 name="contact-person"
-                size="50"
+                size="60"
               />
             </div>
             <div className="control">
