@@ -23,7 +23,7 @@ ul {
 header {
   display: flex;
   flex-direction: row;
-  background-color: #757f82;
+  background-color: #090f11;
   padding: 1rem;
   color: #0dfae7;
   justify-content: space-between;
@@ -74,8 +74,8 @@ a.active {
 }
 
 .page__title {
-  background-color: black;
-  color: white;
+  background-color: #242a2c;
+  color: #a0cfdf;
   text-align: center;
 }
 
