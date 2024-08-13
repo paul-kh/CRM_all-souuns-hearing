@@ -190,10 +190,15 @@ fieldset {
     flex-wrap: wrap;
   }
 
-  .navigation {
+  .navigation,
+  .navigation li,
+  .navigation li a {
     min-height: fit-content;
     min-width: 100%;
     text-align: center;
+    padding: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   form {
