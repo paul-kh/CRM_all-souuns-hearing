@@ -120,13 +120,19 @@ form {
 }
 
 .flex-end {
-  display: flex;
   justify-content: flex-end;
 }
 
 .flex-row {
-  display: flex;
   flex-direction: row;
+}
+
+.flex-items-centered {
+  align-items: center;
+}
+
+.flex-content-centered {
+  justify-content: center;
 }
 
 .flex-row input {
@@ -135,8 +141,11 @@ form {
 }
 
 .flex-space-between {
-  display: flex;
   justify-content: space-between;
+}
+
+.self-align__centered {
+  align-self: center;
 }
 
 .fit-content {
@@ -153,6 +162,28 @@ label {
   font-weight: 600;
 }
 
+.list-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  height: 10rem;
+}
+
+.list-container select {
+  width: 100%;
+}
+
+.max-width__100 {
+  width: max-content;
+  background-color: green;
+}
+
+.text-align__centered {
+  text-align: center;
+}
+
 .text-transform__no {
   text-transform: none;
 }
@@ -165,6 +196,9 @@ label {
   color: rgb(124, 4, 4);
 }
 
+.p-left-1 {
+  padding-left: 1rem;
+}
 .p-t-1 {
   padding-top: 1rem;
 }

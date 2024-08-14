@@ -2,7 +2,7 @@ export default function NewWorkOrder() {
   return (
     <main className="page-container">
       <div className="page__title">
-        <h2>New Work Order Page</h2>
+        <h2>New Work Order</h2>
       </div>
 
       <div className="page__details">

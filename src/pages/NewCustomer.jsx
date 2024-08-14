@@ -1,10 +1,10 @@
-import { STATES } from "../data";
+import { USA_STATES } from "../data";
 
 export default function NewCustomer() {
   return (
     <main className="page-container">
       <div className="page__title">
-        <h2>New Customer Page</h2>
+        <h2>New Customer</h2>
       </div>
 
       <div className="page__details">
@@ -45,7 +45,7 @@ export default function NewCustomer() {
                 <option value="" disabled>
                   Select state
                 </option>
-                {STATES.map((state) => {
+                {USA_STATES.map((state) => {
                   return (
                     <option key={state.name} value={state.name}>
                       {state.name}

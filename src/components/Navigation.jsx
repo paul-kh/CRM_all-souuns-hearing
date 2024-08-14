@@ -46,6 +46,46 @@ export default function Navigation() {
             Create Invoice
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/new-statement"
+            className={({ isActive }) => {
+              return isActive ? "active" : undefined;
+            }}
+          >
+            Create Statement
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/search-customer"
+            className={({ isActive }) => {
+              return isActive ? "active" : undefined;
+            }}
+          >
+            Search Customer
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/search-workorder"
+            className={({ isActive }) => {
+              return isActive ? "active" : undefined;
+            }}
+          >
+            Search Work Order
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/search-invoice"
+            className={({ isActive }) => {
+              return isActive ? "active" : undefined;
+            }}
+          >
+            Search Invoice
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
