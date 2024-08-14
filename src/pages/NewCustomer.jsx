@@ -82,7 +82,7 @@ export default function NewCustomer() {
             </div>
           </div>
 
-          <p className="form-actions">
+          <p className="form-actions p-t-1">
             <button type="reset" className="button button-flat">
               Reset
             </button>

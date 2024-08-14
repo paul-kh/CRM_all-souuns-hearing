@@ -40,25 +40,26 @@ img {
 }
 
 .navigation {
-  padding: 1rem;
+  padding: 7rem 0;
   text-align: left;
   font-size: 1.2rem;
   min-height: 90vh;
   min-width: 20rem;
-  background-color: #9b9a99;
+  background-color: #242a2c; /*#9b9a99; */
 }
 
 .navigation ul {
-  color: rgb(21, 21, 129);
+  color: rgb(85, 11, 30);
 }
-.navigation li a {
+.navigation a {
   text-decoration: none;
   font-weight: 700;
+  color: #a0cfdf;
 }
 
 .navigation a:hover,
 a.active {
-  color: rgb(168, 57, 5);
+  color: #0dfae7;
   font-weight: 900;
 }
 .navigation li {
@@ -70,7 +71,7 @@ a.active {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #d0dbde;
+  background-color: #3a6637;
 }
 
 .page__title {
@@ -115,8 +116,27 @@ form {
   display: flex;
   flex-direction: column;
   flex: 1; /* shorthand for flex-grow: 1; this allows item to grow as space allows */
-  /*   background-color: pink; */
-  margin: 0.3rem 0;
+  padding-bottom: 0.2rem;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row input {
+  height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 .fit-content {
@@ -125,22 +145,42 @@ form {
 
 label {
   max-width: fit-content;
-  font-size: 0.8rem;
-  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
   color: #64e9e9;
   text-transform: uppercase;
   margin-right: 1rem;
   font-weight: 600;
 }
 
+.text-transform__no {
+  text-transform: none;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-yellow {
+  color: rgb(124, 4, 4);
+}
+
+.p-t-1 {
+  padding-top: 1rem;
+}
+
+.p-t-2 {
+  padding-top: 2rem;
+}
+
 input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.4rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
+  border: 0 solid #758a8a;
   background-color: #cbd6d6;
-  color: #142020;
+  color: #020202;
 }
 
 select {
@@ -165,7 +205,14 @@ input[type="checkbox"] {
 }
 
 fieldset {
-  margin: 0 -0.3px;
+  margin: 0.5rem 0;
+}
+
+legend {
+  font-weight: bold;
+  color: rgb(201, 250, 250);
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
 .form-actions {
