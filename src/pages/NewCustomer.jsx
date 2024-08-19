@@ -1,4 +1,4 @@
-import { USA_STATES } from "../data";
+import { USA_STATES } from "../data.js";
 
 export default function NewCustomer() {
   return (
