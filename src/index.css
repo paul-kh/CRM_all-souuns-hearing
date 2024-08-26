@@ -81,9 +81,15 @@ a.active {
   text-transform: uppercase;
 }
 
-.page__title,
-.page__details {
+.page__title {
   padding: 1rem;
+}
+
+.page__details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ///////////////////// FROM AND ITS CONTROLS //////////////////////////*/
